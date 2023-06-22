@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* リセットCSSを使うとちょっと面倒になるので一旦使わない。 */
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
