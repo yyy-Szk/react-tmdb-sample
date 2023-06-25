@@ -24,7 +24,7 @@ const MovieDetailModal = ({ movieId, closeModal }) => {
 
     theMovieDbClient.fetchMovieCredits({ id: movieId })
       .then(data => { setCredits(data) })
-  }, []);
+  }, [movieId]);
   
   if (!Object.keys(movieDetail).length || !Object.keys(credits).length)
     return <><LoadingModal /></>
